@@ -12,7 +12,6 @@
 <div id="content"></div>
 <div id="root"></div>
     <script type="text/babel">
-
         var HelloWorld = React.createClass({ //простой компонент hello world!
             render: function() {
                 return (
@@ -24,58 +23,6 @@
                 <HelloWorld />,
             document.getElementById('content')
         );
-
-
-        var News = React.createClass({
-            render: function () {
-                return (
-                    <div className="news">
-                        К сожалению, новостей нет.
-                    </div>
-                );
-            }
-        });
-
-        ReactDOM.render(
-            <News />,
-            document.getElementById('root')
-        );
-
-
-        var Comments = React.createClass({ //простой компонент комментарии
-            render: function () {
-                return (
-                    <div className="comments">
-                        Нет новостей - комментировать нечего!
-                    </div>
-                );
-            }
-        });
-
-        ReactDOM.render(
-            <Comments />,
-            document.getElementById('root')
-        );
-
-
-
-        var App = React.createClass({//простой компонент app
-            render: function () {
-                return (
-                <div className="app">
-                    Всем привет, я Компонент!
-                    <News />
-                    <Comments />
-                </div>
-                )
-            }
-        });
-        ReactDOM.render(
-                <App />,
-            document.getElementById('root')
-        );
-
-
 
 
     </script>
